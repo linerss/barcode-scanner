@@ -845,10 +845,6 @@
 
     // Demo Data Loader
     function loadDemoData() {
-      if (!confirm('Load demo data? This will add sample products, history, and scanned items.')) {
-        return;
-      }
-
       // Demo Products
       products = {
         '54476': { cutName: 'Ribeye Steak', price: 34.99, cost: 22.00 },
@@ -943,8 +939,6 @@
       // Put a sample barcode in the input (but don't submit it)
       document.getElementById('barcodeInput').value = '019004710455447631020000481325121621000099900104';
       document.getElementById('barcodeInput').focus();
-
-      alert('✅ Demo data loaded!\n\n• 8 Products added\n• 3 History sessions added\n• 3 Items in current session\n• Sample barcode ready to scan (press Enter or Submit)');
     }
 
     // Navigation
